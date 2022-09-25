@@ -1,0 +1,35 @@
+hr {
+    border-top: 3px double rgb(234, 155, 155);
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .list_triangle {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.list_triangle > li {
+    position: relative;
+    padding: 0px 0px 0px 1em;
+}
+.list_triangle > li::before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.3em solid transparent;
+    border-left: 0.4em solid #3388dd;
+    content: "";
+}
+
+.section_title {
+    border-left:5px solid rgb(231, 134, 134); /*線の設定*/
+    padding:5px 8px; /*余白の設定*/
+}
+
