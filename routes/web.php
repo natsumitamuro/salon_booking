@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\SalonController;
+use Illuminate\Support\Facades\Auth;
 
 
 /*
@@ -32,3 +33,7 @@ Route::get('/edit',[MemberController::class,'edit']);
 Route::get('/top',[App\Http\Controllers\SalonController::class,'getsalons']);
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
